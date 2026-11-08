@@ -193,16 +193,15 @@ grid-template-columns:1.2fr 1fr 1fr;
 gap:16px;
 }
 .gallery-grid img{
-width:100%;height:230px;
-object-fit:contain;
-background:white;
+width:100%;
+height:230px;
+object-fit:cover;
+background:#102944;
 border-radius:16px;
-padding:5px;
 }
 .gallery-grid img:first-child{
 height:476px;
 grid-row:span 2;
-object-fit:cover;
 }
 
 .contact{
@@ -239,7 +238,11 @@ box-shadow:0 8px 30px #20c66b66;
 @media(max-width:850px){
 .links{display:none}
 .hero{min-height:720px;align-items:flex-start}
-.hero-img{width:100%;height:60%;top:auto;bottom:0;opacity:.48;mask-image:linear-gradient(180deg,transparent,#000 35%)}
+.hero-img{
+width:100%;height:60%;top:auto;bottom:0;
+opacity:.48;
+mask-image:linear-gradient(180deg,transparent,#000 35%);
+}
 .hero-content{padding:65px 0 230px}
 .facts{grid-template-columns:1fr}
 .fact{border-right:0;border-bottom:1px solid #ffffff20}
@@ -259,7 +262,7 @@ box-shadow:0 8px 30px #20c66b66;
 .actions .btn{width:100%}
 section{padding:70px 0}
 .grid{grid-template-columns:1fr}
-.gallery-grid img,.gallery-grid img:first-child{height:160px}
+.gallery-grid img,.gallery-grid img:first-child{height:190px}
 .contact{padding:25px}
 .contact h2{font-size:30px}
 }
@@ -289,7 +292,10 @@ WhatsApp Us ↗
 <main id="home">
 
 <div class="hero">
-<img class="hero-img" src="shop.jpg" alt="Krushna Computer shop">
+
+<img class="hero-img"
+src="images/IMG_6751c817-fc06-40dd-821b-7d3c9683297c.jpg"
+alt="Krushna Computer shop">
 
 <div class="wrap hero-content">
 <div class="tag">YOUR LOCAL DIGITAL SERVICE CENTRE</div>
@@ -391,7 +397,11 @@ WhatsApp Enquiry
 
 <section id="about">
 <div class="wrap about">
-<img src="shop.jpg" alt="Inside Krushna Computer">
+
+<img
+src="images/IMG_79c0a736-0d65-461f-b551-391f47eb59e3.jpg"
+alt="Inside Krushna Computer">
+
 <div>
 <div class="tag">ABOUT OUR SHOP</div>
 <h2>Your Local Digital Service Partner</h2>
@@ -399,6 +409,7 @@ WhatsApp Enquiry
 Welcome to Krushna Computer, located in Nawabpura, Ner, Maharashtra.
 We provide assistance with everyday digital and document-related needs.
 </p>
+
 <div class="points">
 <div>✓ Convenient local service centre</div>
 <div>✓ Electricity bill payment assistance</div>
@@ -406,6 +417,7 @@ We provide assistance with everyday digital and document-related needs.
 <div>✓ Banking-related assistance</div>
 <div>✓ Easy WhatsApp enquiries</div>
 </div>
+
 <a class="btn primary" href="https://wa.me/919423433982" style="margin-top:25px">Contact Our Shop ↗</a>
 </div>
 </div>
@@ -413,6 +425,7 @@ We provide assistance with everyday digital and document-related needs.
 
 <section class="gallery" id="gallery">
 <div class="wrap">
+
 <div class="heading">
 <small>OUR SHOP & SERVICES</small>
 <h2>Explore Our Gallery</h2>
@@ -420,17 +433,32 @@ We provide assistance with everyday digital and document-related needs.
 </div>
 
 <div class="gallery-grid">
-<img src="shop.jpg" alt="Krushna Computer shop">
-<img src="mahavitaran.jpg" alt="Mahavitaran logo">
-<img src="insurance.jpg" alt="Insurance services">
-<img src="services.jpg" alt="Additional service information">
+
+<img
+src="images/IMG_6751c817-fc06-40dd-821b-7d3c9683297c.jpg"
+alt="Krushna Computer shop">
+
+<img
+src="images/IMG_79c0a736-0d65-461f-b551-391f47eb59e3.jpg"
+alt="Computer services">
+
+<img
+src="images/IMG_b70f11a7-bd4f-4675-99b8-005a01277f33.jpg"
+alt="Printing services">
+
+<img
+src="images/IMG_d7a58551-27d2-461d-8e47-5a60aeec10bb.jpg"
+alt="Krushna Computer services">
+
 </div>
 </div>
 </section>
 
 <section id="contact">
 <div class="wrap">
+
 <div class="contact">
+
 <div>
 <div class="tag">GET IN TOUCH</div>
 <h2>Need Help With A Service?</h2>
@@ -447,6 +475,7 @@ Ask us when you should visit the shop.
 </div>
 
 <div class="contact-info">
+
 <div>
 <small>PHONE / WHATSAPP</small>
 <strong>+91 94234 33982</strong>
@@ -470,6 +499,7 @@ Ask us when you should visit the shop.
 <a class="btn secondary" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Krushna+Computer+Nawabpura+Ner+Maharashtra+445102">
 Get Directions ↗
 </a>
+
 </div>
 </div>
 </div>
@@ -485,12 +515,14 @@ Nawabpura, Ner, Maharashtra 445102.
 </div>
 </footer>
 
-<a class="float-wa" href="https://wa.me/919423433982?text=Namaste%20Krushna%20Computer%2C%20mujhe%20aapse%20kaam%20karwana%20hai.%20Dukaan%20mein%20kitne%20baje%20aau%3F" target="_blank" aria-label="WhatsApp">✆</a>
+<a class="float-wa"
+href="https://wa.me/919423433982?text=Namaste%20Krushna%20Computer%2C%20mujhe%20aapse%20kaam%20karwana%20hai.%20Dukaan%20mein%20kitne%20baje%20aau%3F"
+target="_blank"
+aria-label="WhatsApp">✆</a>
 
 <script>
 document.getElementById("year").textContent=new Date().getFullYear();
 </script>
 
 </body>
-  </html>
-  
+</html>
